@@ -1,0 +1,2454 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja AngoLuxury.com - AngoLuxury.com</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/categorias.css">
+</head>
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+--cor-padrao: #0000;
+--cor-padrao-hover: #daa520;
+--cor-fonte: #000000;
+--cor-fonte-p: #000000;
+--cor-btn: #A36303;
+--cor-btn-hover: #daa520;
+--cor-bnt-fonte: #ffffff;
+--cor-fonte-corpo: #5a5a5a;
+--cor-fonte-corpo-leve: #ffffff;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao));
+}
+
+.banner .linha {
+margin-top: 90px;
+
+}
+
+
+
+
+
+.NAVBAR{
+display: flex;
+align-items: center;
+padding: 20px;
+height: 200px;
+margin-top: 0px;
+
+}
+
+
+
+.NAVBAR header{
+height: 150px;
+background-color: #e9e9e9;
+box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+
+}
+
+
+
+.carrinho {
+text-align: right;
+margin-top: 100px;
+align-items: top;
+}
+
+
+nav{
+flex: 1;
+text-align: right;
+}
+
+
+nav ul {
+margin: 30px;
+display: inline-block;
+list-style-type: none;
+}
+
+
+nav ul li {
+
+display: inline-block;
+margin-right: 10px;
+}
+
+.nav ul #MenuItens{
+border-radius: 20px;
+color:#000000;
+}
+
+nav ul li a {
+color: #2c2c2c;
+font-size: 17px;
+text-transform: capitalize;
+padding: 20px 5px;
+font-weight: 400;
+transition: all .42s ease;
+text-decoration: none;
+color: #000000;
+}
+
+
+.banner p {
+color: var(--cor-fonte);
+}
+
+p {
+color: var(--cor-fonte-corpo);
+}
+
+.linha {
+margin: 20px;
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.col-2 {
+flex-basis: 50%;
+min-width: 300px;
+}
+
+.col-2 img {
+max-width: 100%;
+padding: 50px 0;
+}
+
+.col-2 h1 {
+color: #000;
+font-size: 30px;
+line-height: 60px;
+margin: 20px 0;
+}
+
+.col-2 p {
+font-size: 20px;
+font-weight: 600;
+color: #daa520;
+}
+.col-2 small{
+font-size: 15px;
+} 
+
+.btn {
+font-size: 15px;
+text-decoration: none;
+Color: #000000;
+background: var(--cor-btn);
+padding: 8px 30px;
+margin: 30px 0;
+border-radius: 30px;
+transition: background 0.5s;
+}
+
+.btn:hover {
+background:#229605;
+color: #3d3d3d;
+}
+
+
+/*---------- category ---------*/
+
+
+.categorias {
+margin: 70px 0;
+}
+.linha .linha2 #select{
+margin: 50px;
+
+}
+
+.corpo-categorias {
+max-width: 1080px;
+margin: auto;
+padding-left: 25px;
+padding-right: 25px;
+}
+
+
+.corpo-categorias ul li{
+text-align: center;
+display: none;
+}
+
+.col-3 {
+flex-basis: 30%;
+min-width: 250px;
+margin-bottom: 30px;
+}
+
+.col-3 img {
+width: 100%;
+object-fit: cover;
+object-position: center;
+}
+
+.col-4 { 
+flex-basis: 25%;
+min-width: 200px;
+padding: 10px;
+margin-bottom: 50px;
+transition: transform 0.5s;
+
+}
+
+.col-4:hover {
+transform: scale(1.1);
+}
+
+.col-4 img {
+width: 100%;
+object-fit: cover;
+object-position: center;
+}
+
+.titulo {
+position: relative;
+line-height: 60px;
+margin: 0 auto 80px;
+text-align: center;
+color: #000000;
+}
+
+.titulo::after {
+content: '';
+background-color: #6e6e6e;
+width: 80px;
+height: 5px;
+border-radius: 5px;
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+}
+
+h4 {
+color: var(--cor-fonte-corpo);
+font-weight: normal;
+}
+
+.col-4 p {
+font-size: 14px;
+}
+
+.classificacao ion-icon {
+color: #A36303;
+}
+
+.promocao {
+background-color: #4F4201;
+margin-top: 80px;
+padding: 30px 0;
+}
+
+.col-2 .PROMOCAO-img {
+padding: 50px;
+}
+
+small {
+color: #daa520;
+}
+
+/*---------- MARCAS ---------*/
+
+.marcas {
+margin: 100px auto;
+}
+
+.col-5 {
+width: 160px;
+}
+
+.col-5 img {
+width: 100%;
+cursor: pointer;
+filter: grayscale(100%);
+}
+
+.col-5 img:hover {
+filter: grayscale(0%);
+}
+
+/*---------- RODAPE ---------*/
+
+
+
+/*---------- LISTAGEM DE PRODUTOS ---------*/
+
+.menu-celular{
+width: 28px;
+margin-left: 20px;
+display: none;
+}
+
+.NovoMenu nav ul li a {
+color: var(--cor-fonte)
+}
+
+.NovoMenu {
+box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.linha2 {
+margin: 100px auto 50px;
+justify-content: space-between;
+}
+
+.linha2 select {
+padding: 5px;
+border: 1px solid var(--cor-btn)
+}
+
+.paginacao {
+margin: 0 auto 80px;
+}
+
+.paginacao span {
+width: 40px;
+height: 40px;
+display: inline-block;
+border: 1px solid var(--cor-padrao);
+text-align: center;
+line-height: 40px;
+margin-left: 10px;
+cursor: pointer;
+}
+
+.paginacao span:hover {
+background: #daa520;
+
+}
+
+
+
+/*---------- PRODUTOS CLASSE ---------*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+
+list-style: none;
+text-decoration: none;
+}
+
+header{
+position: fixed;
+width: 100%;
+top: 0;
+right: 0;
+z-index: 1000;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 10%;
+}
+
+.logo img{
+height: auto;
+}
+.navmenu{
+display: flex;
+}
+
+.navmenu a{
+color: #fff;
+font-size: 16px;
+text-transform: capitalize;
+padding: 10px 20px;
+font-weight: 400;
+transition: all .42s ease;
+}
+
+.navmenu a:hover{
+color: #EE1C47;
+}
+
+.nav-icon{
+display: flex;
+align-items: center;
+}
+
+.nav-icon i{
+margin-right: 20px;
+color: #2c2c2c;
+font-size: 25px;
+font-weight: 400;
+transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+transform: scale(1.1);
+color: #EE1C47;
+}
+
+#menu-icon{
+font-size: 35px;
+color: #2c2c2c;
+z-index: 10001;
+cursor: pointer;
+}
+
+section{
+padding: 5% 10%;
+}
+
+.main-hause{
+width: 100%;
+height: 100vh;
+background-position: center;
+background-size: cover;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+align-items: center;
+}
+
+
+.main-text h5{
+color: #EE1C47;
+font-size: 16px;
+text-transform: capitalize;
+font-weight: 500;
+
+}
+
+.main-text h1{
+color: #000000;
+font-size: 65px;
+text-transform: capitalize;
+line-height: 1.1;
+font-weight: 600;
+margin: 6px 0 10px;
+}
+
+.main-text p{
+color: #333c56;
+font-size: 20px;
+font-style: italic;
+margin-bottom: 20px;
+}
+
+.main-btn{
+display: inline-block;
+color: #111;
+font-size: 16px;
+font-weight: 500;
+text-transform: capitalize;
+border: 2px solid#111;
+padding: 12px 25px;
+transition: all .42s ease;
+}
+
+.main-btn:hover{
+background-color: #000000;
+color: #fff;
+
+}
+
+.main-btn i{
+vertical-align: middle;
+}
+
+.down-arrow{
+position: absolute;
+top: 85%;
+right: 11%;
+}
+
+.down i{
+font-size: 30px;
+color: #2c2c2c;
+border: 2px solid #2c2c2c;
+border-radius: 50px;
+padding: 12px 12px;
+}
+
+.down i:hover{
+background-color: #2c2c2c;
+color: #fff;
+transition: all .42s ease;
+}
+header.sticky{
+background: #fff;
+padding: 5px 5%;
+box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+
+/*trending-section-css */
+.center-text h2{
+color: #111;
+font-size: 28px;
+text-transform: capitalize;
+text-align: center;
+margin-bottom: 35px;
+}
+
+.center-text span{
+color: #EE1C47;
+}
+
+.products{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+gap: 2rem;  
+}
+.row{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 10px; 
+max-width: 100%; 
+position: relative;
+transition: all .40s;
+}
+.row img{
+width: 200px; /* Largura de cada imagem */
+height: auto; /* Mantém a proporção */
+border: 2px solid #000; /* Adiciona uma borda */
+border-radius: 8px; /* Bordas arredondadas */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.row img:hover{
+transform: scale(0.9);
+}
+
+
+/*---------- DETALHES ---------*/
+
+
+.ver-produto {
+margin-top: 40px;
+}
+
+.ver-produto .col-2 img {
+width: 100%;
+padding: 0;
+}
+
+.ver-produto .col-2 #produtoImg {
+width: 600px;
+height: 450px;
+object-fit: cover;
+object-position: top;
+}
+
+.ver-produto .col-2{
+padding: 20px;
+}
+
+
+.ver-produto .product-vision h4{
+margin: 20px 0;
+font-size: 22px;
+font-weight: bold;
+}
+
+.ver-produto  .product-vision  select{
+display: block;
+padding: 10px;
+margin-top: 20px;
+border: 1px solid var(--cor-padrao)
+
+}
+
+.ver-produto .product-vision input{
+width: 50px;
+height: 40;
+margin-right: 10px;
+padding-left: 10px;
+font-size:20px;
+border: 1px solid var(--cor-padrao);
+}
+
+.ver-produto .product-vision .btn{
+background: var(--cor-btn);
+height: 42px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.ver-produto .btn:hover{
+background-color: #229605;
+}
+
+.ver-produto .product-vision p{
+font-size: 13px;
+}
+
+.img-linha{
+display: flex;
+justify-content: space-between;
+}
+
+.img-col{
+flex-basis: 24%;
+cursor: pointer;
+}
+
+.product-vision .container .product-image{
+flex-basis:24%;
+width: 60px;
+border-radius: black;
+float: left;
+padding: 20px;
+}
+
+.ver-produto
+
+
+/*---------- banners ---------*/
+.banner {
+width: 100%;
+height: auto;
+display: block;
+margin: 0 auto;
+}
+
+
+/*---------- CARRINHO DE COMPRAS 2 ---------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body{
+background-color: #ffffff;
+font-family: "Poppins", serif;
+}
+
+body div.bannercarrinho header {
+background-color: black;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 20px 0;
+    text-align: center;   
+    display: flex;
+    justify-content: center;
+}
+
+
+body header {
+color: #ffffff;
+font-size: 24px;
+padding: 20px 0;
+text-align: center;   
+display: flex;
+justify-content: center;
+}
+
+header span b{
+color: wheat;
+}
+
+
+body main {   
+    background: white;
+    padding: 0 30px 30px;
+}
+
+button{
+cursor: pointer;
+}
+
+
+main .page-title {
+font-size: 40px;
+padding: 50px 0;
+text-align: center;
+
+}
+
+main .content {
+display: flex;
+
+}
+
+div.content section { 
+flex: 1;
+
+}
+
+div.content aside {
+min-width: 250px;
+}
+
+table{
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+}
+
+thead tr{
+border-bottom: 3px solid #eee;
+
+}
+
+thead th{
+text-align: left;
+padding-bottom: 10px;
+text-transform: uppercase;
+color: #666;
+}
+
+
+tbody td{
+padding: 30px 0;
+
+}
+
+.product{
+display: flex;
+align-items: center;
+}
+
+.product .imgMini{
+border-radius: 6px;
+
+}
+
+.product .info{
+margin-left: 30px;
+
+}
+
+.info .name{
+font-size: 20px;
+
+}
+
+.info .category{
+color: #666;
+}
+
+div.content thead tr{
+border-bottom: 3px solid #eee;
+}
+
+div.content thead th{
+padding-bottom: 10px;
+text-transform: uppercase;
+}
+
+
+
+div.content tr {
+border-bottom: 3px solid #7e7e7e;
+}
+
+div.content thead tbody td {
+padding: 30px 0;
+}
+
+.product {
+display: flex;
+align-items: center;
+}
+
+.product img {
+border-radius: 6px;
+}
+
+.product .info {
+margin-left: 20px;
+}
+
+.product .name {
+font-size: 20px;
+margin-bottom: 10px;
+}
+
+.product .category {
+color:#3d3d3d;
+}
+
+.qty {
+background: #eee;
+display: inline-flex;
+padding: 0 0;
+justify-content: space-around;
+align-items: center;
+min-width: 60px;
+border-radius: 20px;
+overflow: hidden;
+height: 30px;
+}
+
+.qty span {
+margin: 0 10px;
+}
+
+.qty button {
+display: flex;
+align-items: center;
+background: transparent;
+border: 0;
+padding: 0 10px;
+font-size: 20px;
+height: 100%;
+}
+
+.qty button:hover{
+transition: background #202020 0.10s;
+background: #202020;
+color: #eee;
+}
+
+
+.remove {
+background: #eee;
+border: 0;
+width: 30px;
+height: 30px;
+border-radius: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 20px;
+cursor: pointer;
+}
+
+button:hover {
+transition: background #eee 0.5s;
+color: #eee;
+background: #202020;
+}
+
+aside{
+margin-left: 30px;
+}
+
+
+aside .box{
+margin-bottom: 15px;
+border: 1px solid #ccc;
+background: #eee;
+
+}
+
+.box {
+margin-top: 20px;
+margin: 15px;
+padding: 15px;
+}
+
+aside header {
+padding: 15px 20px;
+font-size: 18px;
+border-bottom: 1px solid #ccc;
+
+
+}
+
+aside header .info{
+padding: 20px;
+font-size: 16px;
+
+}
+
+.info div {
+display: flex;
+justify-content: space-between;
+margin-bottom: 10px;
+color: #555;
+}
+
+aside footer{
+padding: 15px 20px;
+background: #ddd;
+font-size: 16px;
+
+}
+
+
+.box button {
+border: 0;
+padding: 15px 0;
+color: #fff;
+background: green;
+display: block;
+width: 100%;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-size: 16px;
+text-decoration: 0;
+}
+
+.box a {
+text-decoration: none;
+}
+
+.bannercarrinho .btn4 {
+border: 0;
+padding: 15px 0;
+color: #fff;
+background: rgb(0, 0, 0);
+display: flex;
+width: 100px;
+margin-left: 30px;
+}
+
+
+
+
+
+/*---------- MINHA CONTA ---------*/
+.minha-conta{
+background: radial-gradient(var(--cor-fonte-corpo), var(--cor-fonte-p));
+padding: 50px 0;
+}
+
+.formulario{
+position: relative;
+padding: 20px 0;
+text-align: center;
+width: 300px;
+height: 400px;
+margin: auto;
+background-color: var(--cor-fonte);
+box-shadow: 30px 0 20px 0 rgba(0, 0, 0, 0.1);
+overflow: hidden;
+}
+
+.formulario span{
+display: inline-block;
+width: 100px;
+padding: 0 10px;
+font-weight: bold;
+color: var(--cor-padrao);
+cursor: pointer;
+}
+
+.btn-form{
+display: inline-block;
+}
+
+.formulario form{
+position: absolute;
+top:110px;
+max-width: 300px;
+padding: 0 20px;
+transition: transform 1s;
+}
+
+.formulario form input{
+width: 100%;
+height: 40px;
+margin: 10px 0;
+padding: 0 10px;
+border: 1px solid var(--cor-padrao);
+border-radius: 3px;
+}
+
+.formulario form input:focus{
+outline: none;
+}
+
+.formulario form .btn{
+width: 100%;
+margin: 10px 0;
+border:none;
+border-radius: 4px;
+background-color: #A36303;
+cursor: pointer;
+}
+
+
+.formulario form .btn:hover{
+background-color: #229605;
+}
+
+.formulario form a{
+font-size: 12px;
+text-decoration: none;
+color: var(--cor-btn);
+cursor: pointer;
+}
+
+#EntrarPainel{
+left:-300px;
+}
+
+#CadastroSite{
+left:0;
+}
+
+#Indicador{
+width: 100px;
+height: 3px;
+border: none;
+background-color: #000000;
+margin-top:8px;
+transform: translateX(100px);
+transition: transform 1s;
+}
+
+
+.linha ul{
+cursor: pointer;
+}
+
+
+
+/*---------- MENU CELULAR ---------*/
+
+@media only screen and (max-width:0px) {
+@media (max-width: 600px) {
+    
+    }
+  
+
+
+nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: var(--cor-fonte)
+}
+
+
+.menu-celular {
+    display: block;
+    cursor: pointer;
+}
+
+.NovoMenu nav ul li a {
+    color: var(--cor-fonte)
+}
+}
+
+/*----------  CELULAR 600 ---------*/
+@media only screen and (max-width:0px) {
+
+.linha {
+    text-align: center;
+}
+
+.linha .col-4 {
+    flex-basis: 100%;
+
+}
+
+.col-2,
+.col-3,
+.col-4 {
+    flex-basis: 100%
+}
+
+.col-2 h1 {
+    font-size: 27px;
+}
+
+.rodape-col-3,
+.rodape-col-4 {
+    text-align: center;
+}
+
+.col-4 p {
+    font-size: 24px;
+
+}
+
+
+.NovoMenu nav ul li a {
+    color: var(--cor-fonte)
+}
+
+.ver-produto .col2{
+    margin: 20px 0;
+}
+
+.ver-produto .linha{
+    text-align: left;
+}
+
+.ver-produto h1{
+    font-size: 26px;
+    line-height: 26px;
+}
+
+
+.info-carrinho p{
+    display: none;
+}
+
+
+/*---------- BANNER COMPUTADOR ---------*/
+@media only screen and (width: 100%){
+    .desktop-banner{
+      display: none;
+    }
+}
+
+/*---------- BANNER CELULAR ---------*/
+ 
+@media only screen and (min-width: 800px){
+        .mobile-banner{
+          display: none;
+        }
+}
+
+
+
+
+
+
+}
+
+
+    </style>
+
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.category {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.product-title {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.price-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  color: #ff4d4d;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.buy-button {
+  background: none;
+  border: 1px solid #ff4d4d;
+  color: #ff4d4d;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.buy-button:hover {
+  background: #ff4d4d;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .products-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .products-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+ /*---------- prestação de Serviço ---------*/
+ .service-card {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+  width: 90px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.service-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.service-price {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 40px;
+}
+
+.service-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.btn-request, .btn-add-to-cart {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.btn-request:hover, .btn-add-to-cart:hover {
+  background-color: #0056b3;
+}
+/* From Uiverse.io by AshmitVavhal */ 
+.btn-p {
+  position: relative;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: white;
+  background-color: black;
+}
+
+.btn-p:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-p:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-p::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-p::after {
+  background-color: black;
+}
+
+.btn-p:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.cartBtn {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border-radius: 6em;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  background-color: rgb(29, 29, 29);
+  box-shadow: 0 20px 30px -7px rgba(27, 27, 27, 0.219);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.cart {
+  z-index: 2;
+}
+
+.cartBtn:active {
+  transform: scale(0.96);
+}
+
+.product {
+  position: absolute;
+  width: 12px;
+  border-radius: 3px;
+  content: "";
+  left: 23px;
+  bottom: 23px;
+  opacity: 0;
+  z-index: 1;
+  fill: rgb(211, 211, 211);
+}
+
+.cartBtn:hover .product {
+  animation: slide-in-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0) rotate(-90deg);
+    opacity: 1;
+  }
+}
+
+.cartBtn:hover .cart {
+  animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/*--presta  */
+/* From Uiverse.io by Sree-1821 */ 
+.loader {
+  --col1: rgb(38, 0, 255);
+  --col2: rgb(255, 179, 80);
+  font-size: 30px;
+  font-weight: 600;
+  perspective: 800px;
+  position: relative;
+  text-align: center;
+}
+
+.loader::after,
+.loader::before,
+.loader .text::after,
+.loader .text::before {
+  perspective: 800px;
+  animation: anim 2s ease-in-out infinite, dotMove 10s ease-out alternate infinite, move 10s linear infinite 1s;
+  ;
+  content: '●';
+  color: var(--col1);
+  position: absolute;
+  translate: -60px 500px;
+  width: 5px;
+  height: 5px;
+}
+
+.loader::before {
+  animation-delay: 3s;
+  color: var(--col1);
+}
+
+.loader .text::before {
+  color: var(--col2);
+  animation-delay: 2s;
+}
+
+.loader .text::after {
+  color: var(--col2);
+}
+
+.loader .text {
+  animation: anim 20s linear infinite, move 10s linear infinite 1s;
+  color: transparent;
+  background-image: linear-gradient(90deg, 
+  var(--col1) 0%,
+  var(--col2) 100%);
+  background-clip: text;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: skew(5deg, -5deg);
+  -webkit-background-clip: text;
+  position: relative;
+}
+
+@keyframes anim {
+  0%, 100% {
+    text-shadow: 2px 0px 2px rgba(179, 158, 158, .5);
+  }
+
+  50% {
+    background-size: 0%;
+    background-position-x: left;
+    text-shadow: 2px 10px 6px rgba(179, 158, 158, 1);
+  }
+}
+
+@keyframes move {
+  50% {
+    translate: 0px 0px;
+    rotate: x 60deg;
+    transform: skew(-5deg, 5deg);
+  }
+}
+
+@keyframes dotMove {
+  0%, 100% {
+    translate: -60px 300px;
+  }
+
+  50% {
+    translate: 160px -250px;
+    scale: .5;
+    opacity: .85;
+  }
+}
+
+
+
+/*--- category */
+.categories-container {
+  margin-left: 40px;
+  width: 250px;
+  font-family: Arial, sans-serif;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #b99f0c;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+.category-item {
+  border-bottom: 1px solid #000000;
+  transition: all 0.3s ease;
+}
+
+.category-item span{
+  font-size: 15px;
+  color: #000;
+  font-family: "Poppins", serif;
+}
+
+.category-item.hidden {
+  display: none;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.category-item.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.category-item:last-of-type {
+  border-bottom: none;
+}
+
+.category-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  text-decoration: none;
+  color: #363636;
+  font-size: 14px;
+}
+
+.category-link:hover {
+  background-color: #f5f5f5;
+}
+
+.category-icon {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.toggle-icon, .show-more-icon {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.collapsed .toggle-icon {
+  transform: rotate(-180deg);
+}
+
+.category-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.expanded .category-content {
+  max-height: 1000px;
+}
+
+.show-more-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: none;
+  border-top: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.show-more-btn:hover {
+  background-color: #f1f1f1;
+}
+
+.show-more-btn .show-more-icon {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.show-more-btn.active .show-more-icon {
+  transform: rotate(180deg);
+}
+    </style>
+
+    <!-- INICIO BANNER  ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO-->
+      <div class="banner">
+  
+         <!--INICIO DE CONTAINER  ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO-->
+         <div class="container">
+
+            <div class="menucelular">   
+                <img src="assets/img/menu.png" alt="" alt="" class="menu-celular" onclick="menucelular()">
+            </div> 
+            
+            <!--INICIO DE NAVEGAÇÃO  ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO-->
+                
+
+                    <div class="NAVBAR">
+                        <header>
+                          <a href="#" class="logo"><img src="assets/img/logo marca.png" alt="" width="150px"></a>
+                          <br>
+
+                        <nav>
+                         
+                            <ul id="MenuItens">  
+                                <li><a href="index.html" title="">INICIO <ion-icon name="home-outline"></ion-icon></a></li>
+                                <li><a href="produtos.html" title="">Produtos <ion-icon name="pricetag-outline"></ion-icon></a></li>
+                                <li><a href="blog.html" title="">Blog</a></li>
+                                <li><a href="contacto.html" title="">Contactos <ion-icon name="call-outline"></ion-icon></a></li>
+                                <li><a href="minha-conta.html" title="">Minha Conta</a></li>
+                                <br>
+                                <hr>
+                                <a href="Alimentação/alimentação.html">
+                                    <img src="assets/img/ALIMENTAÇÃO E FRUTA/alimentacao-saudavel.png" alt="" width="40px" >
+                                </a>               
+                                <a href="Prestação-s.html">
+                                    <img src="assets/img/banners.com/public-service.png" alt=""  width="40px">
+                                </a>
+                               
+                            </ul>                     
+                          </nav>
+                        </header>    
+                        
+                        
+                         
+
+ 
+                </div> 
+                
+
+                </div>
+               <!--FIM DE NAVEGAÇÃO TOPO  ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO-->
+
+               <div class="categories-container">
+                <button class="category-header">
+                    <span>Todas as categorias</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li class="category-item">
+                            <a href="RoupasMasculinas/RoupasMasculinas.html" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Roupas-Masculinas</span>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Roupas-Femininas</span>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Calçados</span>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Vestuário</span>
+                            </a>
+                        </li>
+                        <li class="category-item hidden">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Beleza</span>
+                            </a>
+                        </li>
+                        <li class="category-item hidden">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Pérucas e Apliques</span>
+                            </a>
+                        </li>
+                        <li class="category-item hidden">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Acessórios</span>
+                            </a>
+                        </li>
+                        <li class="category-item hidden">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Perfumes e cosmetico</span>
+                            </a>
+                        </li>
+                        <li class="category-item hidden">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Roupas Infantis</span>
+                            </a>
+                        </li>
+                        <li class="category-item hidden">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>TeleFones e PCs</span>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Casa e Jardins</span>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Eletrodocos de Consumo</span>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Iluminação</span>
+                            </a>
+                        </li>
+                        <li class="category-item hidden">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Bagagens e Bolsas</span>
+                            </a>
+                        </li>
+                        <li class="category-item hidden">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Esportes</span>
+                            </a>
+                        </li>
+                        <li class="category-item hidden">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Jogos e Brinquedos </span>
+                            </a>
+                        </li>
+                        <li class="category-item hidden">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Moveis</span>
+                            </a>
+                        </li>
+                        <li class="category-item hidden">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Segurança e Proteção</span>
+                            </a>
+                        </li>
+                        <li class="category-item hidden">
+                            <a href="#" class="category-link">
+                                <span class="category-icon"></span>
+                                <span>Ferramentas e Industrias</span>
+                            </a>                      
+                    </ul>
+                    <button class="show-more-btn">
+                        Ver mais
+                        <span class="show-more-icon">▼</span>
+                    </button>
+                </div>
+            </div>
+
+
+        
+
+            
+                 <!-- INICIO TEXTO DO BANNER  ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO-->
+                   <div class="linha">    
+                    
+                     <div class="col-2">
+                        <h1>AngoLuxury <AO> 
+                            <br>  Seja Próspero</h1>
+                            <P>"Variedade Completa": Encontre de tudo em um só lugar</P> 
+                                <br>                         
+                             <ao><a href="Prestação-s.html" class="btn">Prestação de Serviços <ion-icon name="people-circle-outline"></ion-icon></a>                      
+                     </div>
+
+                     <div class="col-2">
+                        <img src="assets/img/banners.com/Leonardo_Phoenix_Create_an_image_of_a_joyful_black_man_in_his_0-removebg-preview.png" alt="">
+                     </div>
+
+                   </div>
+                 <!-- FIM TEXTO DO BANNER  ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO-->
+
+
+
+          </div>
+          <!--FIM DE CONTAINER  ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO-->
+     </div>   
+      <!-- FIM BANNER  ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO-->
+
+
+
+      <!--INICIO CATEGORIAS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+      <div class="categorias">
+
+         <!--INICIO CORPO CATEGORIAS EM DESTAQUE ANGOLUXURY.COM   ANGOLUXURY SEJA PROSPERO -->
+         <div class="corpo-categorias">
+
+          
+
+          <!--INICIO LINHA CORPO CATEGORIAS EM DESTAQUE ANGOLUXURY.COM   ANGOLUXURY SEJA PROSPERO -->  
+          <div class="linha">
+
+            <div class="col-3">
+                <img src="assets/img/categoria-2.jpg" alt="">
+            </div>
+
+            <div class="col-3">
+                <img src="assets/img/geral classe produtos/roupas femininas/blusa grande camiseta oversized streetwear estampa created with a purpose algodão modinha grande.jpg" alt="">
+            </div>
+
+            <div class="col-3">
+                <img src="assets/img/geral classe produtos/acessorios masculinos/Corrente masculina de elos duplos 70 cm x 3mm aço inoxidável Top.jpg" alt="">
+            </div>
+
+          </div>
+          
+          <!--FIM LINHA CORPO CATEGORIAS EM DESTAQUE ANGOLUXURY.COM   ANGOLUXURY SEJA PROSPERO -->  
+
+         </div>
+         <!--FIM CORPO CATEGORIAS EM DESTAQUE ANGOLUXURY.COM   ANGOLUXURY SEJA PROSPERO -->
+
+      </div>
+        <!--FIM CATEGORIAS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+         <!--INCIO PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+         <div class="corpo-categorias">
+
+          <h2 class="titulo">Produtos em Destanques</h2>
+
+            <!--INICIO LINHA CORPO CATEGORIAS EM DESTAQUE ANGOLUXURY.COM   ANGOLUXURY SEJA PROSPERO --> 
+          <div class="linha">
+
+            
+                <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+                <div class="col-4">
+                    <a href="RoupasMasculinas/RoupasMasculinas.html" title="">
+                    <img src="assets/img/geral classe produtos/RoupasMasculinas/Hombres Camisa con abertura.jpg" alt="">
+                </a>
+                    <h4>Mais Vendidos</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>50.000 kz</p>
+
+                </div>
+                <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+          
+                <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+                <div class="col-4">
+                    <a href="Acessorios/Acessorios.html" title="">
+                    <img src="assets/img/geral classe produtos/acesorios feminos/Relógio de quartzo com ponteiro redondo.jpg" alt="">
+                </a>
+                    <h4>Mais Vendidos</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>50.000 kz</p>
+                    
+                </div>
+                <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+    
+                 <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+                 <div class="col-4">
+                    <img src="assets/img/geral classe produtos/casa e jardins/Home Decoration 🌟⭐ _ Home garden ideas💚☘️ _ Facebook.jpg" alt="">
+                    <h4>Mais Vendidos</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>50.000 kz</p>
+                    
+                </div>
+                <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+               
+                  <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+                <div class="col-4">
+                    <a href="bolsas/bolsas&Malas.html"></a>
+                    <img src="assets/img/geral classe produtos/bolsas masculinas/x.jpg" alt="">
+                    <h4>Mais Vendidos</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>50.000 kz</p>
+                    
+                </div>
+                <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+                 <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+                 <div class="col-4">
+                    <a href="Iluminação/Iluminação.html">
+                    <img src="assets/img/geral classe produtos/iluminação/Lustre Pendente Fios E27 Estilo Industrial 5 fios 1 metro _ Elo7 Produtos Especiais.jpg" alt="">
+                </a>
+                    <h4>Mais Vendidos</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>50.000 kz</p>
+                    
+                </div>
+                <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+                
+                 <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+                 <div class="col-4">
+                    <a href="Esportes/Esportes.html">
+                    <img src="assets/img/geral classe produtos/esportes-masculinos/7b1d2344-bff3-47be-9fe7-fabf62464f08.jpg" alt="">
+                </a>
+                    <h4>Mais Vendidos</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>50.000 kz</p>
+                    
+                </div>
+                <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+                 <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+                 <div class="col-4">
+                    <a href="RoupasFemininas/roupasFemininas.html">
+                    <img src="assets/img/geral classe produtos/roupas femininas/Jaqueta Jeans Penellopy.jpg" alt="">
+                </a>
+                    <h4>Mais Vendidos</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>50.000 kz</p>
+                    
+                </div>            
+               <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+                <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+                <div class="col-4">
+                    <a href="RoupasFemininas/roupasFemininas.html">
+                    <img src="assets/img/geral classe produtos/roupas femininas/Saias de jeans adolescentes.jpg" alt="">
+                </a>
+                    <h4>Mais Vendidos</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>50.000 kz</p>
+                    
+                </div>            
+               <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+
+         </div>
+              <!--FIM LINHA CORPO CATEGORIAS EM DESTAQUE ANGOLUXURY.COM   ANGOLUXURY SEJA PROSPERO --> 
+
+              <h2 class="titulo">Novidades </h2>
+
+                <!--INICIO LINHA CORPO CATEGORIAS EM DESTAQUE ANGOLUXURY.COM   ANGOLUXURY SEJA PROSPERO --> 
+          <div class="linha">
+
+            <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+            <div class="col-4">
+                <img src="assets/img/produto-7.jpg" alt="">
+                <h4>Mais Vendidos</h4>
+                <div class="classificacao">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p>50.000 kz</p>
+
+            </div>
+            <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+      
+            <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+            <div class="col-4">
+                <img src="assets/img/produto-8.jpg" alt="">
+                <h4>Mais Vendidos</h4>
+                <div class="classificacao">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p>50.000 kz</p>
+                
+            </div>
+            <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+             <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+             <div class="col-4">
+                <img src="assets/img/produto-9.jpg" alt="">
+                <h4>Mais Vendidos</h4>
+                <div class="classificacao">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p>50.000 kz</p>
+                
+            </div>
+            <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+           
+              <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+            <div class="col-4">
+                <img src="assets/img/produto-10.jpg" alt="">
+                <h4>Mais Vendidos</h4>
+                <div class="classificacao">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p>50.000 kz</p>
+                
+            </div>
+            <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+             <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+             <div class="col-4">
+                <img src="assets/img/produto-11.jpg" alt="">
+                <h4>Mais Vendidos</h4>
+                <div class="classificacao">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p>50.000 kz</p>
+                
+            </div>
+            <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+              <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+              <div class="col-4">
+                <a href="bolsas/bolsas&Malas.html">
+                <img src="assets/img/geral classe produtos/bosas-femininas/Bolsa baguete transversal acompanha alça regulável qualidade premium forrado por dentro blogueira moda.jpg" alt="">
+            </a>
+                <h4>Mais Vendidos</h4>
+                <div class="classificacao">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p>50.000 kz</p>
+                
+            </div>
+            <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+            <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+            <div class="col-4">
+                <a href="bolsas/bolsas&Malas.html">
+                <img src="assets/img/geral classe produtos/bolsas masculinas/x.jpg" alt="">
+            </a>
+                <h4>Mais Vendidos</h4>
+                <div class="classificacao">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p>50.000 kz</p>
+                
+            </div>
+            <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+
+             <!--INCIO ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+             <div class="col-4">
+                <img src="assets/img/produto-11.jpg" alt="">
+                <h4>Mais Vendidos</h4>
+                <div class="classificacao">
+                    <ion-icon name="star"></ion-icon> 
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p>50.000 kz</p>
+                
+            </div>            
+           <!--FIM ITEM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+     </div>
+          <!--FIM LINHA CORPO CATEGORIAS EM DESTAQUE ANGOLUXURY.COM   ANGOLUXURY SEJA PROSPERO --> 
+
+         </div>
+
+        <!--FIM PRODUTOS EM DESTAQUES ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+                <!--INICIO PROMOCAO ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+                <div class="promocao">
+                   
+                    <div class="corpo-categorias">
+                        <div class="linha">
+                           
+                            <div class="col-2">
+                                <img src="assets/img/banners.com/banner_ia-removebg-preview.png" alt="" class="PROMOCAO-img" width="480px">
+                            </div>
+                            <br>
+                           <br>
+                            <div class="col-2">
+                                  <p>Qualidade e sofisticação ao seu alcance!</p>
+                                  <h1>Seja bem-vindo ao mundo da AngoLuxury.</h1>
+                                  <small>Entregando excelência e confiança em cada pedido.
+                                    "Porque cada detalhe importa.
+                                    "Seu desejo, nossa prioridade.</small>
+                                    <br>
+                                    <br>
+                                 <a href="produtos.html" class="btn">Comprar Agora &#10003;</a>
+                            </div>
+                        </div> 
+                    </div>
+
+                </div>
+                <!--FIM PROMOCAO ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+                <!--INICIO DEPOIMENTO ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+                <div class="depoimento">
+                    <div class="corpo-categorias">
+                        <div class="linha">
+
+                         <div>
+                    <div>  
+                </div>
+                <!--FIM DEPOIMENTO ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+
+                    <!--INICIO MARCAS ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+                    <div class="marcas">
+                        <div class="corpo-categorias">
+                            <div class="linha">
+
+
+                                <div class="col-5">
+                                    <img src="assets/img/jj e.png" alt="">
+                                 </div>
+                              
+                                 <div class="col-5">
+                                    <img src="assets/img/logo marca.png" alt="">
+                                 </div>
+
+
+
+                           <div>
+                        <div>   
+
+                    </div>
+
+                    <!--FIM MARCAS ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->
+
+             <!--INICIO RODAPE ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO --> 
+
+             <style>
+                /* Reset básico */
+            /* Reset básico */
+            body, h1, p, ul, li, a, footer {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+            
+            body {
+              font-family: 'Poppins', sans-serif;
+              color: #333;
+              background-color: #f9f9f9;
+            }
+            
+            .content {
+              text-align: center;
+              padding: 3rem;
+              background: #fff;
+            }
+            
+            .footer-rodape {
+             background-color: #242424;
+              color: #fff;
+              padding: 3rem 1rem;
+            }
+            
+            .footer-container-rodape {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              max-width: 1200px;
+              margin: auto;
+              gap: 2rem;
+            }
+            
+            .footer-detalhe{
+              flex: 1;
+              min-width: 200px;
+            }
+            
+            .footer-logo {
+              font-size: 1.5rem;
+              font-weight: bold;
+              color: #f9b700;
+            }
+            
+            .footer-detalhe h3 {
+              font-size: 1.2rem;
+              margin-bottom: 1rem;
+              color: #f9b700;
+            }
+            
+            .footer-detalhe ul {
+              list-style: none;
+              padding: 0;
+            }
+            
+            .footer-detalhe ul li {
+              margin: 0.5rem 0;
+            }
+            
+            .footer-detalhe ul li a {
+              color: #ddd;
+              text-decoration: none;
+              transition: color 0.3s;
+            }
+            
+            .footer-detalhe ul li a:hover {
+              color: #f9b700;
+            }
+
+
+            
+            .social-icons {
+              margin-top: 1rem;
+              display: flex;
+              gap: 0.5rem;
+            }
+            
+            .social-icons a {
+              font-size: 1.5rem;
+              color: #ddd;
+              transition: color 0.3s;
+            }
+            
+            .social-icons a:hover {
+              color: #f9b700;
+            }
+            
+            #newsletter {
+              margin-top: 1rem;
+              display: flex;
+              gap: 0.5rem;
+            }
+            
+            #newsletter input {
+              padding: 0.8rem;
+              flex: 1;
+              border: none;
+              border-radius: 5px;
+            }
+            
+            #newsletter button {
+              padding: 0.8rem 1.5rem;
+              background: #f9b700;
+              border: none;
+              color: #222;
+              cursor: pointer;
+              border-radius: 5px;
+              transition: background 0.3s;
+            }
+            
+            #newsletter button:hover {
+              background: #ffc72c;
+            }
+            
+            .footer-bottom {
+              text-align: center;
+              margin-top: 2rem;
+              font-size: 0.9rem;
+              color: #ccc;
+              border-top: 1px solid #444;
+              padding-top: 1rem;
+            }
+            .footer-bottom p{
+                color: #fff;
+            }
+            
+            .footer-detalhe p{
+                cursor: pointer;
+                color: #ddd;
+            }
+            .footer-detalhe p:hover{
+                color: #f9b700;   
+            }
+            
+            
+            
+              </style>
+            
+                    <!-- Conteúdo Principal -->
+                    <div class="content">
+                        <h1>Bem-vindo à AngoLuxury</h1>
+                        <p>Produtos e serviços exclusivos para transformar sua experiência.</p>
+                    </div>
+                
+                 
+                          </footer>
+                       <!-- Rodapé -->
+                       <footer class="footer-rodape">
+                        <div class="footer-container-rodape">
+                            <!-- Logo e Informações de Contato -->
+                            <div class="footer-detalhe">
+                                <h2 class="footer-logo">contacto</h2>
+                                <a href="https://wa.me/+244940528007"><p>+244 940 528 007</p></a>
+                               <a href="https://mail.google.com/mail/u/1/?hl=pt_PT#inbox?compose=new"><p>Email: angoluxury@gmail.com </p></a>
+                               
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                
+                            <!-- Suporte -->
+                            <div class="footer-detalhe">
+                                <h3>Suporte</h3>
+                                <a href=""> <p>Fale Conosco</p></a>
+                                <a href=""> <p>Sobre Nós</p></a>
+                                <a href=""> <p>Guia de Tamanhos</p></a>
+                                <a href=""> <p>Política de Privacidade</p></a>
+                            </div>
+                
+                            <!-- Compras -->
+                            <div class="footer-detalhe">
+                                <h3>Compras</h3>
+                                <a href="RoupasMasculinas/RoupasMasculinas.html"> <p>Moda Masculina</p></a>
+                                <a href="RoupasFemininas/roupasFemininas.html"> <p>Moda Feminina</p></a>
+                                <a href="bebes-crianças/bebesecrianças.html"> <p>Moda Infantil</p></a>
+                                <a href="Moveis/Moveis.html"> <p>Móveis</p></a>
+                                <a href="Ferramnetas&Insdustrias/Industria&Ferramentas.html"> <p>Ferramentas e Industrias</p></a>
+            
+                            </div>
+                
+                            <!-- Empresa -->
+                            <div class="footer-detalhe">
+                                <h3>Empresa</h3>
+                                <a href="#"> <p>AngoLuxury</p></a>
+                                <a href="#"> <p>serviços</p></a>
+                                <a href="#"> <p>JJ E-commerce</p></a>
+                             </div>
+                      
+                                  <!-- Inscreva-se -->
+                                  <div class="footer-detalhe">
+                                      <h3>Inscreva-se</h3>
+                                      <p>Receba atualizações, promoções e descontos exclusivos diretamente no seu e-mail.</p>
+                                      <form id="newsletter">
+                                       <a href="minha-conta.html">
+                                          <button type="submit">Inscrever-se</button>
+                                        </a>
+                                      </form>
+                                  </div>
+                              </div>
+                      
+                              <div class="footer-bottom">
+                                  <p>© 2024 AngoLuxury. Todos os direitos reservados. | Feito com 💛 pela equipe AngoLuxury</p>
+                              </div>
+          
+
+             </footer>       
+             <!--FIM RODAPE ANGOLUXURY.COM    ANGOLUXURY SEJA PROSPERO -->        
+
+
+
+
+
+             <link rel="preconnect" href="https://fonts.googleapis.com">
+             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+             <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ <script src="assets/js/app.js"></script>
+ <script src="assets/js/buscar.js"></script>
+</body>
+</html>
