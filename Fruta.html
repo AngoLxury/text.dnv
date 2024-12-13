@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas AngoLuxury.com</title>
+    <link rel="stylesheet" href="alimentação.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/apple.svg" alt="Logo">
+                <span>FreshFruits</span>
+            </div>
+            <div class="nav-links">
+                <a href="index - Atalho.lnk">Home</a>
+                <a href="alimentação.html">Alimentação</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="cart-icon" onclick="toggleCart()">
+                <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/shopping-cart.svg" alt="Cart">
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Fresh & Healthy<br><span>Natural Fruits</span></h1>
+            <p>Discover nature's sweetest gifts. We bring you the freshest, hand-picked fruits from local farms to your table.</p>
+            <button onclick="scrollToProducts()">Shop Now</button>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="feature">
+            <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/truck.svg" alt="Delivery">
+            <h3>Free Delivery</h3>
+            <p>Free delivery for all orders over $50</p>
+        </div>
+        <div class="feature">
+            <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/leaf.svg" alt="Fresh">
+            <h3>Always Fresh</h3>
+            <p>100% organic and fresh fruits</p>
+        </div>
+        <div class="feature">
+            <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/heart.svg" alt="Support">
+            <h3>Customer Support</h3>
+            <p>24/7 dedicated customer support</p>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our Fresh Products</h2>
+        <p class="products-subtitle">Discover our selection of fresh, hand-picked fruits delivered daily from local farms</p>
+        <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <div class="cart-overlay" id="cartOverlay" onclick="closeCart()">
+        <div class="cart-panel" onclick="event.stopPropagation()">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <button onclick="closeCart()" class="close-btn">×</button>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-footer" id="cartFooter">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <button onclick="checkout()" class="checkout-btn">Checkout via WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Frutas.js"></script>
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

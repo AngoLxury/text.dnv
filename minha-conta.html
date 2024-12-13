@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro - AngoLuxury</title>
+    <style>
+        /* Estilos permanecem iguais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f5f8;
+        }
+
+        body span{
+
+            font-size: 36px;
+            font-weight: bold;
+            color: black;
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        body img{
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        body h4{
+            position: absolute;
+            top: 130px;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+
+
+        .container {
+            display: flex;
+            width: 900px;
+            height: 500px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .panel.left {
+            background-color: #2ac3b4;
+            color: white;
+        }
+
+        .panel.right {
+            background-color: #ffffff;
+            color: black;
+        }
+
+        .panel h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .panel p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .panel button {
+            background: none;
+            border: 2px solid white;
+            padding: 10px 20px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: background 0.3s;
+        }
+
+        .panel.left button:hover {
+            background-color: white;
+            color: #2ac3b4;
+        }
+
+        .panel.right button {
+            border-color: #2ac3b4;
+            color: #2ac3b4;
+        }
+
+        .panel.right button:hover {
+            background-color: #2ac3b4;
+            color: white;
+        }
+
+        .form-container {
+            flex: 2;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .form-container.active {
+            display: flex;
+        }
+
+        .form-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #2ac3b4;
+        }
+
+        .form-container input {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-container button {
+            background-color: #2ac3b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-container button:hover {
+            background-color: #219c94;
+        }
+
+        .notification {
+            color: green;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">
+    <img src="assets/img/logo marca.png" alt="" width="100px">
+</a>
+  <h4><ion-icon name="arrow-up-circle-outline" width="50px"></ion-icon></h4>
+
+    <span>Bem-Vindos a AngoLuxury</span>
+
+    
+    <div class="container">
+        <!-- Painel de Login -->
+        <div class="panel left" id="login-panel">
+            <h2>Welcome Back!</h2>
+            <p>To keep connected with us, please login with your personal info</p>
+            <button onclick="showForm('login')">Sign In</button>
+        </div>
+        <div class="form-container" id="login-form">
+            <h2>Login</h2>
+            <input id="login-email" type="email" placeholder="Email" required>
+            <input id="login-password" type="password" placeholder="Password" required>
+            <button onclick="login()">Log In</button>
+            <p class="notification" id="login-notification"></p>
+        </div>
+        <!-- Painel de Cadastro -->
+        <div class="panel right" id="signup-panel">
+            <h2>Create Account</h2>
+            <p>Or use your email for registration:</p>
+            <button onclick="showForm('signup')">Sign Up</button>
+        </div>
+        <div class="form-container" id="signup-form">
+            <h2>Sign Up</h2>
+            <input id="signup-name" type="text" placeholder="Name" required>
+            <input id="signup-email" type="email" placeholder="Email" required>
+            <input id="signup-password" type="password" placeholder="Password" required>
+            <button onclick="signup()">Create Account</button>
+            <p class="notification" id="signup-notification"></p>
+        </div>
+    </div>
+
+    <script>
+        function showForm(type) {
+            if (type === 'login') {
+                document.getElementById('login-form').classList.add('active');
+                document.getElementById('signup-form').classList.remove('active');
+            } else {
+                document.getElementById('signup-form').classList.add('active');
+                document.getElementById('login-form').classList.remove('active');
+            }
+        }
+
+        function signup() {
+            const name = document.getElementById('signup-name').value;
+            const email = document.getElementById('signup-email').value;
+            const password = document.getElementById('signup-password').value;
+
+            if (localStorage.getItem(email)) {
+                document.getElementById('signup-notification').textContent = "Email already registered!";
+                document.getElementById('signup-notification').style.color = "red";
+                return;
+            }
+
+            if (name && email && password) {
+                localStorage.setItem(email, JSON.stringify({ name, password }));
+                document.getElementById('signup-notification').textContent = "Account created successfully!";
+                document.getElementById('signup-notification').style.color = "green";
+                setTimeout(() => {
+                    window.location.href = "index.html"; // Substitua pelo link do site principal.
+                }, 1500);
+            } else {
+                document.getElementById('signup-notification').textContent = "Please fill out all fields!";
+                document.getElementById('signup-notification').style.color = "red";
+            }
+        }
+
+        function login() {
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+
+            const user = localStorage.getItem(email);
+            if (user) {
+                const userData = JSON.parse(user);
+                if (userData.password === password) {
+                    alert(`Welcome back, ${userData.name}!`);
+                    window.location.href = "index.html"; // Substitua pelo link do site principal.
+                } else {
+                    document.getElementById('login-notification').textContent = "Incorrect password!";
+                    document.getElementById('login-notification').style.color = "red";
+                }
+            } else {
+                document.getElementById('login-notification').textContent = "User not found!";
+                document.getElementById('login-notification').style.color = "red";
+            }
+        }
+    </script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+       
+</body>
+</html>

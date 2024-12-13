@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init("service_mqqp3po"); // Substitua pelo seu User ID do Email.js
+    })();
+</script>
+
+<div class="form-container active">
+    <button onclick="sendMarketingEmails()">Enviar Mensagem para Todos</button>
+    <p id="email-notification" class="notification"></p>
+</div>
+<script>
+function sendMarketingEmails() {
+    let allEmails = [];
+    for (let i = 0; i < localStorage.length; i++) {
+        const email = localStorage.key(i);
+        const user = JSON.parse(localStorage.getItem(email));
+
+        if (user) {
+            allEmails.push({ email: email, name: user.name });
+        }
+    }
+
+    if (allEmails.length === 0) {
+        document.getElementById('email-notification').textContent = "Nenhum cliente registrado!";
+        document.getElementById('email-notification').style.color = "red";
+        return;
+    }
+
+    allEmails.forEach((user) => {
+        emailjs
+            .send("service_mqqp3po", "template_so5cqie", {
+                user_name: user.name,
+                user_email: user.email,
+                message: "Olá " + user.name + ", aproveite nossas promoções exclusivas na AngoLuxury!",
+            })
+            .then(
+                () => {
+                    document.getElementById('email-notification').textContent = "Mensagens enviadas com sucesso!";
+                    document.getElementById('email-notification').style.color = "green";
+                },
+                (error) => {
+                    document.getElementById('email-notification').textContent =
+                        "Erro ao enviar mensagens. Tente novamente!";
+                    document.getElementById('email-notification').style.color = "red";
+                    console.error("Erro: ", error);
+                }
+            );
+    });
+}
+</script>
+
+Olá {user_name},
+
+Estamos felizes em tê-lo conosco! Aproveite as últimas novidades da AngoLuxury:
+- Produtos de luxo com entrega rápida.
+- Promoções exclusivas.
+
+Visite-nos agora!
+
+Equipe AngoLuxury.
+
+</body>
+</html>
